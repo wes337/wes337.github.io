@@ -86,6 +86,7 @@ a {
 }
 a:hover {
     text-decoration: none;
+    color: #c83545;
 }
 
 /* Animation Stuff */
