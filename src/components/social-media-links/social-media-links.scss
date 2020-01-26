@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+
+.social-media-links {
+    display: flex;
+    position: absolute;
+    top: 0;
+    svg {
+        color: $colorGray;
+        margin: 1.6rem;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    svg:hover, svg:active {
+        transform: scale(1.4);
+        color: $colorWhite;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .social-media-links {
+        svg {
+            color: $colorGray;
+            margin: 1rem;
+
+            &.fa-2x {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
