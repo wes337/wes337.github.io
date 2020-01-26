@@ -1,0 +1,230 @@
+@import '../../variables.scss';
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $colorBlack;
+    background-color: rgba( $colorBlack, 0.8 );
+
+    .modal__content {
+        z-index: 1000;
+        font-family: $bodyFont;
+        color: $colorDark;
+        background-color: $colorWhite;
+        margin: 2rem auto;
+        width: 75%;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 5fr 4fr;
+        grid-template-rows: auto 2fr;
+        grid-gap: 2rem;
+        padding: 2rem;
+
+        .modal__close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 2.4rem;
+            color: $colorLight;
+            border: none;
+            float: right;
+            cursor: pointer;
+            margin: 2.4rem;
+            transition: all ease-in-out 0.2s;
+            background-color: transparent;
+
+            &:hover {
+                color: $colorGrayLight;
+                background-color: transparent;
+            }
+        }
+
+        .modal__header {
+            display: flex;
+            flex-direction: column;
+            
+            font-family: $headerFont;
+
+            .modal__title {
+                font-weight: 700;
+                font-size: 2.8rem;
+                border-bottom: 0.2rem solid $colorYellow;
+            }
+
+            .modal__subtitle {
+                display: flex;
+                align-items: center;
+                font-weight: 300;
+                font-size: 1.6rem;
+
+                .mobile__label {
+                    font-size: 1.2rem;
+                }
+
+                .modal__icon {
+                    margin: 0 1rem;
+                }
+
+                .icon--react {
+                    color: rgb(21, 170, 191);
+                }
+                .icon--js {
+                    color: lighten( $colorYellow, 10% );
+                }
+                .icon--java {
+                    color: $colorOrange;
+                }
+            }
+        }
+
+        .modal__actions {
+            text-align: right;
+
+            a.button {
+                color: $colorDark;
+                margin: 0.2rem;
+                text-decoration: none;
+
+                svg {
+                    margin: auto 0.2rem;
+                }
+            }
+        }
+
+        .modal__screenshot {
+            height: 360px;
+            background-image: url('../../assets/images/screenshots/backgrounds/light.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            overflow: hidden;
+
+            img {
+                position: relative;
+                top: 10%;
+                height: 100%;
+                width: auto;
+
+                &.--mobile {
+                    position: relative;
+                    top: 10%;
+                    height: auto;
+                    width: 50%;
+                }
+            }
+        }
+
+        .modal__details {
+            p {
+                font-size: 1.4rem;
+                font-weight: 300;
+
+                a {
+                    text-decoration: none;
+                    color: $colorDark;
+                    background-image: linear-gradient(120deg, $colorYellow 0%, $colorYellow 100%);
+                    background-repeat: no-repeat;
+                    background-size: 100% 0.2em;
+                    background-position: 0 88%;
+                    transition: background-size 0.25s ease-in;
+
+                    &:hover {
+                        background-size: 100% 88%;
+                    }
+                }
+
+                pre {
+                    background-color: $colorGrayLight;
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .modal {
+        .modal__content {
+            margin: 1rem auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .modal {    
+        .modal__content {
+            width: 95%;
+            max-height: 100%;
+            margin: 0.2rem auto;
+            overflow: auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 0;
+
+            .modal__close {
+                font-size: 1.8rem;
+                margin: 1.8rem;
+            }
+
+            .modal__header {
+                .modal__title {
+                    font-size: 2rem;
+                }
+
+                .modal__subtitle {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .modal__actions {
+                margin: 0;
+                font-size: 1rem;
+                text-align: center;
+                
+                a.button {
+                    margin: 1rem 0;
+                }
+            }
+
+            .modal__screenshot {
+                height: 280px;
+                img {
+                    top: 0%;
+                    height: 100%;
+                    width: auto;
+                }
+            }
+
+            .modal__details {
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .modal {
+        .modal__content {
+            margin: 0.2rem auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .modal {
+        .modal__content {
+            margin: 0rem auto;
+        }
+    }
+}

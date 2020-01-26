@@ -1,0 +1,83 @@
+@import '../../variables.scss';
+
+.name, .name .name__text {
+  background-color: transparent;
+}
+
+.name {
+  animation: nameBackgroundIn 0s 1s;
+  animation-fill-mode: forwards;
+  
+  .name__text {
+    animation: nameTextBackgroundIn 0s 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  h1 {
+    line-height: 1;
+    color: $colorWhite;
+    text-transform: uppercase;
+    animation: fadeIn 0s 1s;
+    animation-fill-mode: backwards;
+  }
+     
+  &::after {
+      content: '';
+      animation-delay: 2s;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: $colorWhite;
+      animation:
+        secondaryImageOverlayIn 1s 0s,
+        secondaryImageOverlayOut 1s 1s;
+      animation-fill-mode: both;
+  }
+}
+  
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes nameBackgroundIn {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: $colorPrimary;
+  }
+}
+
+@keyframes nameTextBackgroundIn {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: $colorPrimaryLight;
+  }
+ }
+  
+@keyframes secondaryImageOverlayIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+  
+@keyframes secondaryImageOverlayOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-101%);
+  }
+}
