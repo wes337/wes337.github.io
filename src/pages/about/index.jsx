@@ -51,7 +51,7 @@ function About() {
               Currently, I'm a Software Developer for{" "}
               <a
                 className="external__link"
-                href="https://www.recright.com/en/"
+                href="https://www.happeo.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
