@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.80733e87.chunk.css",
+    "main.css": "/static/css/main.ac73b123.chunk.css",
     "main.js": "/static/js/main.6a67051c.chunk.js",
     "main.js.map": "/static/js/main.6a67051c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.59ce0f69.js",
@@ -8,9 +8,9 @@
     "static/js/2.140fbb02.chunk.js": "/static/js/2.140fbb02.chunk.js",
     "static/js/2.140fbb02.chunk.js.map": "/static/js/2.140fbb02.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d139ed8538818a9de386f7ddd031d32c.js": "/precache-manifest.d139ed8538818a9de386f7ddd031d32c.js",
+    "precache-manifest.547519a2834c9471a75789969dc5ad0b.js": "/precache-manifest.547519a2834c9471a75789969dc5ad0b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.80733e87.chunk.css.map": "/static/css/main.80733e87.chunk.css.map",
+    "static/css/main.ac73b123.chunk.css.map": "/static/css/main.ac73b123.chunk.css.map",
     "static/js/2.140fbb02.chunk.js.LICENSE": "/static/js/2.140fbb02.chunk.js.LICENSE",
     "static/media/astar.png": "/static/media/astar.a9070721.png",
     "static/media/bookstore.png": "/static/media/bookstore.fa49a916.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.59ce0f69.js",
     "static/js/2.140fbb02.chunk.js",
-    "static/css/main.80733e87.chunk.css",
+    "static/css/main.ac73b123.chunk.css",
     "static/js/main.6a67051c.chunk.js"
   ]
 }
