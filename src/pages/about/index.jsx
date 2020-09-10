@@ -53,9 +53,9 @@ function About() {
               >
                 Happeo
               </a>{" "}
-              in <img className="flag" src={Finland} alt="Finland" />
-              developing social intranet for Google Suite using React, Redux,
-              Node.js. Previously, I helped develop{" "}
+              in <img className="flag" src={Finland} alt="Finland" /> developing
+              social intranet for Google Suite using React, Redux, Node.js.
+              Previously, I helped develop{" "}
               <a
                 className="external__link"
                 href="https://www.recright.com/en/"
