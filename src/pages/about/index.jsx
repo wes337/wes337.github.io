@@ -20,11 +20,7 @@ function About() {
       <section className="about">
         <div className="about__content--container">
           <div className="about__header">
-            <h2>
-              Hey, I'm
-              <br />
-              Wesley Moses.
-            </h2>
+            <h2>Hey, I'm Wesley Moses.</h2>
             <hr />
           </div>
           <div className="about__content">
@@ -57,7 +53,7 @@ function About() {
               >
                 Happeo
               </a>{" "}
-              in <img className="flag" src={Finland} alt="Finland" />,
+              in <img className="flag" src={Finland} alt="Finland" />
               developing social intranet for Google Suite using React, Redux,
               Node.js. Previously, I helped develop{" "}
               <a
