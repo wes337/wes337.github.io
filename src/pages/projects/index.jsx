@@ -4,7 +4,7 @@ import modalData from "../../components/modal/modalData";
 import Card from "../../components/card";
 import "./projects.scss";
 
-function Home() {
+const Projects = () => {
   const [currentModal, setCurrentModal] = useState(undefined);
 
   const toggleModal = (modal) => {
@@ -36,6 +36,6 @@ function Home() {
       <Modal modalName={currentModal} toggleModal={toggleModal} />
     </div>
   );
-}
+};
 
-export default Home;
+export default Projects;
