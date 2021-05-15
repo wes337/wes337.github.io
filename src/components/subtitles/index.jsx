@@ -2,89 +2,91 @@ import React, { useEffect, useState, useRef } from "react";
 import { useTransition, animated } from "react-spring";
 import "./subtitles.scss";
 
-const colorYellow = "#EAB331";
-const colorWhite = "#F6F7F8";
-const colorBlue = "#081EFC";
-
-const customStyles = {
-  color: colorYellow,
-  position: "absolute",
-  width: "125%",
-};
-
-const coverPages = [
-  ({ style }) => (
-    <animated.h2 style={{ ...style, ...customStyles }}>
-      Software Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, ...customStyles }}>
-      React Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, ...customStyles }}>
-      Full-Stack Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, ...customStyles }}>Programmer</animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, ...customStyles }}>
-      Front-End Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, ...customStyles }}>
-      Back-End Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, ...customStyles }}>Nerd</animated.h2>
-  ),
-];
-
-const pages = [
-  ({ style }) => (
-    <animated.h2 style={{ ...style, position: "absolute" }}>
-      Software Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, position: "absolute" }}>
-      React Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, position: "absolute" }}>
-      Full-Stack Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, position: "absolute" }}>
-      Programmer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, position: "absolute" }}>
-      Front-End Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, position: "absolute" }}>
-      Back-End Developer
-    </animated.h2>
-  ),
-  ({ style }) => (
-    <animated.h2 style={{ ...style, position: "absolute" }}>Nerd</animated.h2>
-  ),
-];
-
-function Subtitles() {
+const Subtitles = () => {
   const animationInterval = useRef();
   const [index, setIndex] = useState(0);
+
+  const colorYellow = "#EAB331";
+  const colorWhite = "#F6F7F8";
+  const colorBlue = "#081EFC";
+
+  const customStyles = {
+    color: colorYellow,
+    position: "absolute",
+    width: "125%",
+  };
+
+  const coverPages = [
+    ({ style }) => (
+      <animated.h2 style={{ ...style, ...customStyles }}>
+        Software Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, ...customStyles }}>
+        React Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, ...customStyles }}>
+        Full-Stack Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, ...customStyles }}>
+        Programmer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, ...customStyles }}>
+        Front-End Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, ...customStyles }}>
+        Back-End Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, ...customStyles }}>Nerd</animated.h2>
+    ),
+  ];
+
+  const pages = [
+    ({ style }) => (
+      <animated.h2 style={{ ...style, position: "absolute" }}>
+        Software Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, position: "absolute" }}>
+        React Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, position: "absolute" }}>
+        Full-Stack Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, position: "absolute" }}>
+        Programmer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, position: "absolute" }}>
+        Front-End Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, position: "absolute" }}>
+        Back-End Developer
+      </animated.h2>
+    ),
+    ({ style }) => (
+      <animated.h2 style={{ ...style, position: "absolute" }}>Nerd</animated.h2>
+    ),
+  ];
 
   useEffect(() => {
     animationInterval.current = setInterval(
@@ -141,6 +143,6 @@ function Subtitles() {
       </div>
     </div>
   );
-}
+};
 
 export default Subtitles;

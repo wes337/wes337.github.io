@@ -20,12 +20,12 @@ function About() {
       <section className="about">
         <div className="about__content--container">
           <div className="about__header">
-            <h2>Hey, I'm Wesley Moses.</h2>
+            <h2>Hey, I&apos;m Wesley Moses.</h2>
             <hr />
           </div>
           <div className="about__content">
             <p>
-              I'm a full-stack developer from{" "}
+              I&apos;m a full-stack developer from{" "}
               <img className="flag" src={Canada} alt="Canada" />.
             </p>
             <p>
@@ -33,7 +33,7 @@ function About() {
               modern web technologies.
             </p>
             <p>
-              When I'm not coding, you can find me{" "}
+              When I&apos;m not coding, you can find me{" "}
               <a
                 href="https://brethrenmetal.bandcamp.com/"
                 target="_blank"
@@ -44,7 +44,7 @@ function About() {
               .
             </p>
             <p>
-              Currently, I'm a Software Developer for{" "}
+              Currently, I&apos;m a Software Developer for{" "}
               <a
                 className="external__link"
                 href="https://www.happeo.com/"
