@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useSpring, useChain, animated } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +18,7 @@ const defaultProps = {
   },
 };
 
-function Modal({ modalName, toggleModal }) {
+const Modal = ({ modalName, toggleModal }) => {
   const { title, subtitle, viewUrl, srcUrl, image, details, mobile } =
     modalData[modalName] || defaultProps.modal;
 
@@ -35,6 +35,14 @@ function Modal({ modalName, toggleModal }) {
   });
 
   useChain([contentRef, containerRef]);
+
+  useEffect(() => {
+    if (modalName) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+  }, [modalName]);
 
   const onToggleModal = (event) => {
     if (event.target.className === "modal") {
@@ -83,7 +91,7 @@ function Modal({ modalName, toggleModal }) {
       </animated.div>
     </animated.div>
   );
-}
+};
 
 Modal.propTypes = {
   modalName: PropTypes.bool,
