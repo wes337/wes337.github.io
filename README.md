@@ -1,10 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### My Portfolio
 
-## Available Scripts
+Deployed using GH pages. The `gh-pages` branch is deployed to [http://wesley.codes](http://wesley.codes).
 
-My portfolio repo for 2020!
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To view this locally, run `yarn start`, then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
