@@ -1,3 +1,5 @@
+/* eslint-disable */
+/* prettier-disable */
 // https://github.com/bsehovac/shader-program
 
 export default class ShaderProgram {

@@ -1,7 +1,8 @@
+/* eslint-disable react/no-this-in-sfc */
 import React, { useEffect, useRef } from "react";
-import Shader from "../shaders/Shader.js";
-import vertexShader from "../shaders/vertex.js";
-import fragmentShader from "../shaders/fragment.js";
+import Shader from "../shaders/Shader";
+import vertexShader from "../shaders/vertex";
+import fragmentShader from "../shaders/fragment";
 import "./waves.scss";
 
 function Waves() {
@@ -9,6 +10,7 @@ function Waves() {
   const pointSize = 2.5;
 
   useEffect(() => {
+    // eslint-disable-next-line no-new
     new Shader(wavesContainer.current, {
       texture:
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAb1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8v0wLRAAAAJHRSTlMAC/goGvDhmwcExrVjWzrm29TRqqSKenRXVklANSIUE8mRkGpv+HOfAAABCElEQVQ4y4VT13LDMAwLrUHteO+R9f/fWMfO6dLaPeKVEECRxOULWsEGpS9nULDwia2Y+ALqUNbAWeg775zv+sA4/FFRMxt8U2FZFCVWjR/YrH4/H9sarclSKdPMWKzb8VsEeHB3m0shkhVCyNzeXeAQ9Xl4opEieX2QCGnwGbj6GMyjw9t1K0fK9YZunPXeAGsfJtYjwzxaBnozGGorYz0ypK2HzQSYx1y8DgSRo2ewOiyh2QWOEk1Y9OrQV0a8TiBM1a8eMHWYnRMy7CZ4t1CmyRkhSUvP3gRXyHOCLBxNoC3IJv//ZrJ/kxxUHPUB+6jJZZHrpg6GOjnqaOmzp4NDR48OLxn/H27SRQ08S0ZJAAAAAElFTkSuQmCC",
@@ -20,8 +22,8 @@ function Waves() {
       vertex: vertexShader(),
       fragment: fragmentShader(),
       onResize(w, h, dpi) {
-        const position = [],
-          color = [];
+        const position = [];
+        const color = [];
         const width = 400 * (w / h);
         const depth = 400;
         const height = 3;
@@ -43,7 +45,7 @@ function Waves() {
         this.uniforms.size = (h / 400) * pointSize * dpi;
       },
     });
-  });
+  }, []);
 
   return (
     <div className="wrapper">

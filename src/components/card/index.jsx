@@ -20,12 +20,23 @@ function Card({ modalName, image, title, info, mobile, toggleModal }) {
     buttonNode.classList.remove("--hover");
   };
 
+  const handleKeyDown = (event) => {
+    if (["Enter", "Space"].includes(event.code)) {
+      toggleModal(modalName);
+    }
+  };
+
   return (
     <div
       className="card"
       onClick={() => toggleModal(modalName)}
+      onKeyDown={handleKeyDown}
       onMouseOver={onMouseOver}
+      onFocus={onMouseOver}
+      onBlur={onMouseOut}
       onMouseOut={onMouseOut}
+      role="button"
+      tabIndex="0"
     >
       <div className="card__content">
         <p className="card__title">{title}</p>

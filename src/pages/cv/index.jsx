@@ -20,12 +20,12 @@ function CV() {
             </div>
           </div>
           <div className="cv__container--shapes">
-            <div className="cv__container--shapes-triangle"></div>
+            <div className="cv__container--shapes-triangle" />
             <div className="cv__container--shapes-dots--container">
-              <div className="cv__container--shapes-dots"></div>
+              <div className="cv__container--shapes-dots" />
             </div>
             <div className="cv__container--shapes-circle--container">
-              <div className="cv__container--shapes-circle"></div>
+              <div className="cv__container--shapes-circle" />
             </div>
           </div>
         </div>

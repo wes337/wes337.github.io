@@ -57,7 +57,11 @@ const Modal = ({ modalName, toggleModal }) => {
       onClick={(e) => onToggleModal(e)}
     >
       <animated.div className="modal__content" style={contentAnimation}>
-        <button onClick={() => toggleModal(null)} className="modal__close">
+        <button
+          onClick={() => toggleModal(null)}
+          className="modal__close"
+          type="button"
+        >
           <FontAwesomeIcon icon="times" />
         </button>
         <div className="modal__header">
@@ -97,7 +101,7 @@ Modal.propTypes = {
   modalName: PropTypes.bool,
   modal: PropTypes.shape({
     title: PropTypes.string,
-    subtitle: PropTypes.array,
+    subtitle: PropTypes.arrayOf(PropTypes.string),
     viewUrl: PropTypes.string,
     srcUrl: PropTypes.string,
     image: PropTypes.string,

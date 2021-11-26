@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from "react";
 import Modal from "../../components/modal";
 import modalData from "../../components/modal/modalData";

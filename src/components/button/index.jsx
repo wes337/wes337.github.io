@@ -8,12 +8,12 @@ const defaultProps = {
   light: false,
 };
 
-function Button({ text, url, light }) {
+const Button = ({ text, url, light }) => {
   if (!url) {
     return (
-      <button className="button btn-custom">
+      <button className="button btn-custom" type="button">
         <span className={`circle ${light ? "light" : ""}`} aria-hidden="true">
-          <span className="icon arrow"></span>
+          <span className="icon arrow" />
         </span>
         <span className="button-text">{text}</span>
       </button>
@@ -27,12 +27,12 @@ function Button({ text, url, light }) {
       rel="noopener noreferrer"
     >
       <span className="circle" aria-hidden="true">
-        <span className="icon arrow"></span>
+        <span className="icon arrow" />
       </span>
       <span className="button-text">{text}</span>
     </a>
   );
-}
+};
 
 Button.propTypes = {
   text: PropTypes.string,

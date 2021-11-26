@@ -42,6 +42,7 @@ function SocialMediaLinks() {
   return (
     <div className="social-media-links">
       {springs.map((props, i) => (
+        // eslint-disable-next-line react/no-array-index-key
         <animated.div style={props} key={`icons--${i}`}>
           {icons[i]}
         </animated.div>
