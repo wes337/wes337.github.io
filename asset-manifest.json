@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.36c33e1a.chunk.css",
+    "main.js": "/static/js/main.566d1951.chunk.js",
+    "main.js.map": "/static/js/main.566d1951.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1d7d499d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1d7d499d.js.map",
+    "static/js/2.097f6315.chunk.js": "/static/js/2.097f6315.chunk.js",
+    "static/js/2.097f6315.chunk.js.map": "/static/js/2.097f6315.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.36c33e1a.chunk.css.map": "/static/css/main.36c33e1a.chunk.css.map",
+    "static/js/2.097f6315.chunk.js.LICENSE.txt": "/static/js/2.097f6315.chunk.js.LICENSE.txt",
+    "static/media/astar.a7cf7bc5.png": "/static/media/astar.a7cf7bc5.png",
+    "static/media/bookstore.02fa61e0.png": "/static/media/bookstore.02fa61e0.png",
+    "static/media/cv.5a7bf195.pdf": "/static/media/cv.5a7bf195.pdf",
+    "static/media/card.scss": "/static/media/dark.8d8c5ce9.png",
+    "static/media/homeworktracker.67dc70fa.png": "/static/media/homeworktracker.67dc70fa.png",
+    "static/media/modal.scss": "/static/media/light.0b86b95b.png",
+    "static/media/nativebugtracker.5198e773.png": "/static/media/nativebugtracker.5198e773.png",
+    "static/media/nativeplaces.4b1dd815.png": "/static/media/nativeplaces.4b1dd815.png",
+    "static/media/personaltraining.bf9ef3e3.png": "/static/media/personaltraining.bf9ef3e3.png",
+    "static/media/wesley.05789c61.jpg": "/static/media/wesley.05789c61.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d7d499d.js",
+    "static/js/2.097f6315.chunk.js",
+    "static/css/main.36c33e1a.chunk.css",
+    "static/js/main.566d1951.chunk.js"
+  ]
+}
