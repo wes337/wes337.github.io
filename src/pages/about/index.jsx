@@ -26,11 +26,43 @@ function About() {
           <div className="about__content">
             <p>
               I&apos;m a full-stack developer from{" "}
-              <img className="flag" src={Canada} alt="Canada" />.
+              <img className="flag" src={Canada} alt="Canada" />, now living in{" "}
+              <img className="flag" src={Finland} alt="Finland" />.
             </p>
             <p>
               I take pride in building simple, beautiful applications using
               modern web technologies.
+            </p>
+            <p>
+              I&apos;m a Senior Software Engineer at{" "}
+              <a
+                className="external__link"
+                href="https://www.nordea.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Nordea
+              </a>
+              , the largest financial group in the Nordics. Previously, I
+              developed{" "}
+              <a
+                className="external__link"
+                href="https://www.happeo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Happeo
+              </a>
+              , a social intranet for Google Workspace, and{" "}
+              <a
+                className="external__link"
+                href="https://www.recright.com/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RecRight
+              </a>
+              , video recruitment SaaS.
             </p>
             <p>
               When I&apos;m not coding, you can find me{" "}
@@ -42,29 +74,6 @@ function About() {
                 making music
               </a>
               .
-            </p>
-            <p>
-              Currently, I&apos;m a Software Developer for{" "}
-              <a
-                className="external__link"
-                href="https://www.happeo.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Happeo
-              </a>{" "}
-              in <img className="flag" src={Finland} alt="Finland" /> developing
-              social intranet for Google Suite using React, Redux, Node.js.
-              Previously, I helped develop{" "}
-              <a
-                className="external__link"
-                href="https://www.recright.com/en/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RecRight
-              </a>
-              , video recruitment SaaS.
             </p>
           </div>
         </div>
