@@ -1,176 +1,177 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 #cv {
-    position: relative;
-    z-index: 3;
-    display: grid;
-    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
-    grid-gap: 60px;
-    align-items: center;
-    color: $colorWhite;
-    font-family: $headerFont;
-    margin: 120px 0;
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+  grid-gap: 60px;
+  align-items: center;
+  color: $colorWhite;
+  font-family: $headerFont;
+  margin: 120px 0;
 }
 
 .cv {
-    grid-column: 2 / span 12;
+  grid-column: 2 / span 12;
 }
 
 .cv__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    background-color: $colorPrimaryLight;
-    padding-left: 40px;
-    width: 100%;
-    box-shadow: 0 10px 20px $textShadowColor;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: $colorPrimaryLight;
+  padding-left: 40px;
+  width: 100%;
+  box-shadow: 0 10px 20px $textShadowColor;
 }
 
 .cv__container--content {
-    grid-column: 1 / 2;
-    display: grid;
-    grid-gap: 40px;
-    width: 100%;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-gap: 40px;
+  width: 100%;
 }
 
 .cv__container--content-text {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .cv__container--content-btn a {
-    display: inline-block;
-    text-decoration: none;
-    font-family: $headerFont;
-    background-color: $colorPink;
-    color: $colorWhite;
-    font-size: 1.2rem;
-    padding: 20px 15px;
-    border-radius: 5px;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-block;
+  text-decoration: none;
+  font-family: $headerFont;
+  background-color: $colorPink;
+  color: $colorWhite;
+  font-size: 1.2rem;
+  padding: 20px 15px;
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-    &:hover, &:focus {
-        transform: scale(1.1);
-        box-shadow: 0 10px 20px $textShadowColor;
-    }
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px $textShadowColor;
+  }
 }
 
 .cv__container--shapes {
-    grid-column: 2 / 3;
-    display: flex;
-    overflow: hidden;
+  grid-column: 2 / 3;
+  display: flex;
+  overflow: hidden;
 }
 
 .cv__container--shapes-circle {
-    margin-left: auto;
-    width: 150px;
-    height: 300px;
-    background: $colorYellow;
-    border-bottom-left-radius: 300px;
-    border-top-left-radius: 300px;
+  margin-left: auto;
+  width: 150px;
+  height: 300px;
+  background: $colorYellow;
+  border-bottom-left-radius: 300px;
+  border-top-left-radius: 300px;
 }
 
 .cv__container--shapes-triangle {
-    width: 0;
-    height: 0;
-    border-bottom: 200px solid $colorTeal;
-    border-right: 250px solid transparent;
-    align-self: end;
-    margin: auto;
-    margin-right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid $colorTeal;
+  border-right: 250px solid transparent;
+  align-self: end;
+  margin: auto;
+  margin-right: 0;
 }
 
 .cv__container--shapes-dots--container {
-    position: absolute;
-    transform: translateX(250px);
-    z-index: 2;
+  position: absolute;
+  transform: translateX(250px);
+  z-index: 2;
 }
 
 .cv__container--shapes-dots {
-    width: 180px;
-    height: 300px;
-    background: transparent;
-    background-image: radial-gradient($colorPink, 20%, transparent 0);
-    background-size: 12px 12px;
+  width: 180px;
+  height: 300px;
+  background: transparent;
+  background-image: radial-gradient($colorPink, 20%, transparent 0);
+  background-size: 12px 12px;
 }
 
 @media only screen and (max-width: 1000px) {
-    #cv {
-        grid-template-columns: 10px repeat(6, 1fr) 10px;
-        grid-gap: 10px;
-    }
+  #cv {
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
+    grid-gap: 10px;
+  }
 
-    .cv {
-        grid-column: 2 / span 6;
-    }
+  .cv {
+    grid-column: 2 / span 6;
+  }
 
-    .cv__container--shapes-dots--container {
-        transform: translateX(150px);
-    }
+  .cv__container--shapes-dots--container {
+    transform: translateX(150px);
+  }
 
-    .cv__container--shapes-dots {
-        width: 120px;
-    }
+  .cv__container--shapes-dots {
+    width: 120px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    .cv__container {
-        padding-left: 20px;
-    }
+  .cv__container {
+    padding-left: 20px;
+  }
 
-    .cv__container--shapes-circle {
-        transform: translateX(-75px);
-    }
+  .cv__container--shapes-circle {
+    transform: translateX(-75px);
+  }
 
-    .cv__container--shapes-triangle {
-        z-index: 1;
-        transform: translateX(75px);
-    }
+  .cv__container--shapes-triangle {
+    z-index: 1;
+    transform: translateX(75px);
+  }
 
-    .cv__container--shapes-dots--container {
-        transform: translateX(125px);
-    }
+  .cv__container--shapes-dots--container {
+    transform: translateX(125px);
+  }
 
-    .cv__container--shapes-dots {
-        width: 100px;
-    }
+  .cv__container--shapes-dots {
+    width: 100px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .cv__container {
-        padding-left: 10px;
-    }
+  .cv__container {
+    padding-left: 10px;
+  }
 
-    .cv__container--shapes-circle {
-        transform: translateX(-150px);
-    }
+  .cv__container--shapes-circle {
+    transform: translateX(-150px);
+  }
 
-    .cv__container--shapes-triangle {
-        transform: translateX(25px);
-    }
+  .cv__container--shapes-triangle {
+    transform: translateX(25px);
+  }
 
-    .cv__container--shapes-dots--container {
-        transform: translateX(80px);
-    }
+  .cv__container--shapes-dots--container {
+    transform: translateX(80px);
+  }
 
-    .cv__container--shapes-dots {
-        width: 50px;
-    }
+  .cv__container--shapes-dots {
+    width: 50px;
+  }
 
-    .cv__container--content {
-        width: 110%;
-        z-index: 4;
-        grid-gap: 10px;
-    }
+  .cv__container--content {
+    width: 110%;
+    z-index: 4;
+    grid-gap: 10px;
+  }
 
-    .cv__container--content-text {
-        font-size: 1rem;
-        border-radius: 5px;
-        margin: 1rem 0;
-        text-align: center;
-    }
+  .cv__container--content-text {
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    text-align: center;
+  }
 
-    .cv__container--content-btn a {
-        text-align: center;
-    }
+  .cv__container--content-btn a {
+    text-align: center;
+  }
 }

@@ -1,5 +1,5 @@
 export default function vertexShader() {
-    return (`
+  return `
         #define M_PI 3.1415926535897932384626433832795
         precision highp float;
         attribute vec4 a_position;
@@ -20,5 +20,5 @@ export default function vertexShader() {
             gl_PointSize = ( u_size / gl_Position.w ) * 100.0;
             v_color = a_color;
         }
-    `)
+    `;
 }

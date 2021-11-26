@@ -1,28 +1,32 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .footer {
-    text-align: center;
+  text-align: center;
+  color: $colorDark;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 20px 0;
+
+  .footer__bracket {
+    font-weight: 400;
+    color: $colorPrimary;
+  }
+
+  a {
+    text-decoration: none;
     color: $colorDark;
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin: 20px 0;
+    background-image: linear-gradient(
+      120deg,
+      $colorYellow 0%,
+      $colorYellow 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
 
-    .footer__bracket {
-        font-weight: 400;
-        color: $colorPrimary;
+    &:hover {
+      background-size: 100% 88%;
     }
-
-    a {
-        text-decoration: none;
-        color: $colorDark;
-        background-image: linear-gradient(120deg, $colorYellow 0%, $colorYellow 100%);
-        background-repeat: no-repeat;
-        background-size: 100% 0.2em;
-        background-position: 0 88%;
-        transition: background-size 0.25s ease-in;
-
-        &:hover {
-            background-size: 100% 88%;
-        }
-    }
+  }
 }

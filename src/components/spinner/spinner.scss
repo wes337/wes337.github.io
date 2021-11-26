@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 $BG: $colorDark;
 $CUBE: $colorPrimaryLight;
@@ -10,23 +10,23 @@ $HEIGHT: 20px;
 $TIME: 1s;
 
 * {
-    margin: 0;
-    padding: 0;
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-    }
+  margin: 0;
+  padding: 0;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+  }
 }
 
 .spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    height: 50px;
-    transform: translate(-50%, -50%) rotate(25deg) skew(-20deg);
-    -webkit-transform: translate(-50%, -50%) rotate(25deg) skew(-20deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 50px;
+  transform: translate(-50%, -50%) rotate(25deg) skew(-20deg);
+  -webkit-transform: translate(-50%, -50%) rotate(25deg) skew(-20deg);
 }
 
 .spinner__cube {

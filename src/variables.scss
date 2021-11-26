@@ -1,23 +1,22 @@
-$headerFont: 'Montserrat', sans-serif;
-$bodyFont: 'Open Sans', sans-serif;
+$headerFont: "Montserrat", sans-serif;
+$bodyFont: "Open Sans", sans-serif;
 
-$colorPrimary: #081EFC;
-$colorSecondary: #1533BC;
+$colorPrimary: #081efc;
+$colorSecondary: #1533bc;
 $colorPrimaryDark: #101451;
 $colorPrimaryLight: #3366ff;
-$colorWhite: #F6F7F8;
+$colorWhite: #f6f7f8;
 $colorDark: #222636;
-$colorLight: #A1A9CF;
+$colorLight: #a1a9cf;
 $colorBlack: #010102;
-$colorGray: #A4ACCE;
-$colorGrayDark: darken( $colorGray, 20% );
-$colorGrayLight: #E6E9F6;
-$colorGreen: #70AB73;
-$colorRed: #D92303;
-$colorOrange: #F95A0C;
-$colorYellow: #EAB331;
-$colorPink: #FF6666;
-$colorTeal: #46ABEE;
-
+$colorGray: #a4acce;
+$colorGrayDark: darken($colorGray, 20%);
+$colorGrayLight: #e6e9f6;
+$colorGreen: #70ab73;
+$colorRed: #d92303;
+$colorOrange: #f95a0c;
+$colorYellow: #eab331;
+$colorPink: #ff6666;
+$colorTeal: #46abee;
 
 $textShadowColor: rgba(0, 0, 0, 0.2);
