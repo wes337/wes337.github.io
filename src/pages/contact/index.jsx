@@ -29,12 +29,6 @@ function Contact() {
         <div className="contact__body">
           <div className="contact__body--parallax-item">
             <div className="inner-parallax">
-              <FontAwesomeIcon icon="phone" size="2x" />
-              <p>+358 44 491 4200</p>
-            </div>
-          </div>
-          <div className="contact__body--parallax-item">
-            <div className="inner-parallax">
               <FontAwesomeIcon icon="envelope" size="2x" />
               <p>wesmoses@gmail.com</p>
             </div>
