@@ -15,7 +15,6 @@ import Spinner from "./components/spinner";
 import Home from "./pages/home";
 import About from "./pages/about";
 import CV from "./pages/cv";
-import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Footer from "./pages/footer";
 import "./app.scss";
@@ -38,7 +37,7 @@ const App = () => {
     WebFontLoader.load({
       google: {
         families: [
-          "Montserrat:300,400,500,600,700,800,900",
+          "Kanit:300,400,500,600,700,800,900",
           "Open Sans:300,400,500,600,700,800,900",
         ],
       },
@@ -60,7 +59,6 @@ const App = () => {
       <Home />
       <About />
       <CV />
-      <Projects />
       <Contact />
       <Footer />
     </div>

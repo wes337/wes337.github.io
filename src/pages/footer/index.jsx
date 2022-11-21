@@ -17,7 +17,7 @@ const Footer = () => (
         >
           Wesley Moses
         </a>{" "}
-        &copy;2020<span className="footer__bracket"> ]</span>
+        &copy;2022<span className="footer__bracket"> ]</span>
       </p>
     </section>
   </div>

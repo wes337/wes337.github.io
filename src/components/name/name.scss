@@ -19,6 +19,7 @@
     text-stroke: 2px $colorWhite;
     -webkit-text-stroke: 2px $colorWhite;
     letter-spacing: 1.6rem;
+    padding-left: 1.6rem;
 
     .word {
       cursor: default;
@@ -31,6 +32,7 @@
 
       .char {
         display: inline-block;
+        text-align: center;
         transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       }
 
@@ -50,6 +52,7 @@
     h1 {
       font-size: 6rem;
       letter-spacing: 1rem;
+      padding-left: 1rem;
     }
   }
 }
@@ -60,6 +63,7 @@
       text-stroke: 1px $colorWhite;
       -webkit-text-stroke: 1px $colorWhite;
       letter-spacing: 0.6rem;
+      padding-left: 0.6rem;
     }
   }
 }
@@ -78,6 +82,7 @@
 
     h1 {
       letter-spacing: 0.2rem;
+      padding-left: 0.2rem;
     }
   }
 }
