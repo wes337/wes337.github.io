@@ -1,7 +1,7 @@
 {
   "name": "wesley-moses-portfolio",
   "version": "1.0.0",
-  "homepage": "http://wes337.github.io",
+  "homepage": "https://wesley.codes",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
