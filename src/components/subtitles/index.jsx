@@ -89,12 +89,19 @@ const Subtitles = () => {
   ];
 
   useEffect(() => {
-    animationInterval.current = setInterval(
-      () => setIndex((state) => (state + 1) % 7),
-      5000
-    );
+    let mounted = true;
 
-    return () => clearInterval(animationInterval.current);
+    animationInterval.current = setInterval(() => {
+      if (!mounted) {
+        return;
+      }
+      setIndex((state) => (state + 1) % 7);
+    }, 5000);
+
+    return () => {
+      mounted = false;
+      clearInterval(animationInterval.current);
+    };
   }, []);
 
   const coverTransitions = useTransition(index, (p) => p, {
