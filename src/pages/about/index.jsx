@@ -36,7 +36,6 @@ function About() {
             <p>
               I&apos;m a Senior Software Engineer at{" "}
               <a
-                className="external__link"
                 href="https://www.nordea.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -63,17 +62,6 @@ function About() {
                 RecRight
               </a>
               , video recruitment SaaS.
-            </p>
-            <p>
-              When I&apos;m not coding, you can find me{" "}
-              <a
-                href="https://brethrenmetal.bandcamp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                making music
-              </a>
-              .
             </p>
           </div>
         </div>

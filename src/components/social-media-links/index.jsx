@@ -25,9 +25,6 @@ function SocialMediaLinks() {
     <a key="facebook" href="https://www.facebook.com/wesmoses" target="blank">
       <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
     </a>,
-    <a key="bandcamp" href="https://brethrenmetal.bandcamp.com/" target="blank">
-      <FontAwesomeIcon icon={["fab", "bandcamp"]} size="2x" />
-    </a>,
   ];
 
   const springs = useSprings(
